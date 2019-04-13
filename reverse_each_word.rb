@@ -12,9 +12,7 @@ puts greeting
 puts
 def reverse_each_word(string)
   sentence = string.split
-  return_array = []
-  sentence.collect {|string| return_array.push string.reverse}
-  return_array.join(" ")
+  sentence.collect {|string| string.reverse}.join(" ")
 end
 
 second_greeting = "Hi Eden, how are you?"
